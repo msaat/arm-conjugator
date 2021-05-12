@@ -66,7 +66,7 @@ while(1){
   char ex_key[25] = "exit";
   printf("\nEnter a verb or enter 'exit' to quit: ");
   scanf("%s", in_verb);
-  //printf("Your verb is %s.\n", in_verb);
+  // printf("Your verb is %s.\n", in_verb);
 
   if(strcmp(in_verb, ex_key) == 0) {
     break;
