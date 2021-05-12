@@ -28,12 +28,18 @@ int main(void) {
 
 
 
+while(1){
   // taking in input verb 
 
   char in_verb[25]; 
-  printf("Enter a verb: ");
+  char ex_key[25] = "exit";
+  printf("\nEnter a verb or enter 'exit' to quit: ");
   scanf("%s", in_verb);
   //printf("Your verb is %s.\n", in_verb);
+
+  if(strcmp(in_verb, ex_key) == 0) {
+    break;
+  }
 
   // second last and last letters
   char second_last = in_verb[(strlen(in_verb)-2)];
@@ -58,9 +64,7 @@ int main(void) {
   //scanf("%c", &check);
 
   
-
-
-
+}
 
 
 
